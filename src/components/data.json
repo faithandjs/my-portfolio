@@ -16,7 +16,8 @@
         {
             "name" : "interactive comment section",
             "img":[
-                {"0": "./images/interactive-cs.jpg"}
+                {"0": "./images/interactive-cs.jpg"},
+                {"1": "./images/interactive-cs1.jpg"}
             ],
             "text": "This is a Frontend Mentor challenge, It is responsive, accessible and makes use of local storage. It was made with React and SASS.",
             "github": "https://github.com/debaaah/interactive-comments-section-",
