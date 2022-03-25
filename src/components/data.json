@@ -1,0 +1,44 @@
+{
+    "projects": [ 
+        {
+            "name" : "Deba's Bistro",
+            "img":[
+                {"0": "./images/restaurant.jpg"},
+                {"1": "./images/restaurant1.jpg"},
+                {"2": "./images/restaurant2.jpg"},
+                {"3": "./images/restaurant3.jpg"}
+            ],
+            "text": "This is a website for a restaurant that I designed and developed. It was made with React Js, CSS and Bootstrap",
+            "github": "https://github.com/debaaah/a-restaurants-website",
+            "live" : "https://debas-bistro.netlify.app/index.html",
+            "target": "_blank"
+        },
+        {
+            "name" : "interactive comment section",
+            "img":[
+                {"0": "./images/interactive-cs.jpg"}
+            ],
+            "text": "This is a Frontend Mentor challenge, It is responsive, accessible and makes use of local storage. It was made with React and SASS.",
+            "github": "https://github.com/debaaah/interactive-comments-section-",
+            "live" : "https://frontendmentor-interactive-comments-section.netlify.app/",
+            "target": "_blank"
+        },
+        
+        {
+            "name" : "ip address tracker",
+            "img":[{"0": "./images/ip-address-tracker.jpg"}],
+            "text": "This is a Frontend Mentor challlenge where I worked with an API. It was created with React and CSS.",
+            "github": "https://github.com/debaaah/ip-address-tracker",
+            "live" : "https://onosedeba.netlify.app/",
+            "target": "_self"
+        },
+        {
+            "name" : "My portfolio",
+            "img":[{"0": "./images/portfolio.jpg"}],
+            "text": "This is my portfolio that I designed, you are already previewing the live site. It was created with React, SASS and Bootstrap.",
+            "github": "https://github.com/debaaah/my-portfolio",
+            "live" : "https://onosedeba.netlify.app/",
+            "target": "_self"
+        }
+    ]
+}

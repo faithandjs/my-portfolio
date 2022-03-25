@@ -1,69 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
-.body{
-    background: #fff repeat;
-    height: 100vh;
-    position: relative;
-}
-section{
-    padding: 6vh 6vw;
-    text-align: center;
-    color: rgb(63, 63, 63);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
-    min-height: 50px;
-    position: relative;
-}
-ul{
-    list-style-type: none;
-    padding-inline-start: 0px;
-}
-h3,h4{ 
-    font-family: 'Cantata One', serif;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-h3{
-    font-size: 22px;
-}
-h4{
-    font-size: 17px;
-}
-.introduction{
-    font-family: 'Press Start 2P', cursive;
-    background-color: #ffa4c2;
-    color: #fff;
-    height: 300px;
-    text-align: left;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 3;
-    animation-name: glow; 
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-@keyframes glow{
-    0%{
-        text-shadow: 0;
-        }
-    30%{
-        text-shadow: 0 0 10px #fff,;
-        }
-    60%{
-        text-shadow: 0 0 10px #fff,
-                    0 0 20px #fff;
-        }  
-    90%{
-            text-shadow: 0 0 10px #fff,
-                        0 0 20px #fff;
-            }  
-    100%{
-            text-shadow: 0 0 10px #fff;
-            }    
-}
 .image{
     padding: 0 2vw 0 20px;
 }
@@ -85,6 +22,7 @@ h4{
     border: 1px solid rgb(160, 160, 160);
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
+    border-right: 0;
     display: flex;
     width: 100%;
 }
@@ -114,21 +52,14 @@ h4{
 }
 .work{
     z-index: 1;
-}
+}/*
 .gallery{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: baseline;
     margin-top: 4vh;
-}
-.img-box img{
-    max-width: 400px;
-    border-radius: 9px;
-}
-.img-box{
-    margin: 0 5vw 0 0;
-}
+}*/
 .img-box img:hover{
     cursor: pointer;
 }
@@ -144,66 +75,33 @@ h4{
 }
 .modal-body{
     padding: 0 !important;
-}
-.carousel {
-    width: -webkit-fill-available;
-}
+}/*
 .modal-footer{
     border-top: 0px !important;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     border-radius: 0;
     justify-content: unset;
-}
+}*/
 .caption{
     text-align: center;
-}
+}/*
 .footer-btns{
-    /*border: 1px solid rgb(160, 160, 160);*/
     display: flex;
     justify-content: flex-end;
     width: 100%;
-}
-.modal-footer a .btn{
-    border-top: 1px solid rgb(160, 160, 160);
-    border-left: 1px solid rgb(160, 160, 160);
-    border-bottom: 1px solid rgb(160, 160, 160);
-    border-right: 1px solid #ffa4c2;
-    border-radius: 0;
-}
+}/*
 .modal-footer .close-modal{
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffa4c2 !important;
     border-radius: 0;
     color: #fff;
     border: 1px solid #ffa4c2;
     border-radius: 0;
 }
-.see-more{
-    margin: 2px 2px 2px 5px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    border: 1px solid rgb(160, 160, 160);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.see-more a{
-    color: rgb(63, 63, 63) !important;
-}
-.work .btn{
-    border: 1px solid rgb(160, 160, 160);
-    margin-top: 3vh;
-    border-radius: 0;
-}
-.work .btn a{
-    color: rgb(63, 63, 63) !important;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-family: 'Cantata One', serif;
-}
+.close-modal{
+    font-family: Arial, Helvetica, sans-serif;
+}*/
 .contact{
     padding: 6vh 10vw 4vh;
     background-color: #ffa4c2;
@@ -255,11 +153,11 @@ h4{
     .dev-icons li{
         width: 80px;
         padding: 5px;
-    }
+    }/*
     .see-more{
         width: 50px;
         height: 50px;
-    }/*
+    }/
     .gallery{
         justify-content: center; 
     }*/
@@ -271,10 +169,10 @@ h4{
 @media only screen and (max-width: 360px){
     .gallery{
         display: block;
-    }
+    }/*
     .see-more{
         margin: auto;
-    }
+    }*/
     .img-box{
         margin: 0 0 2vh 0;
     }
@@ -321,10 +219,10 @@ h4{
     }
     .modal-dialog{
         min-width: 700px;
-    }
-    .modal-footer, .modal-footer .btn, section{
+    }/*
+    .modal-footer, section .introduction{
         font-size: 22px;
-    }
+    }*/
     h3{
         font-size: 25px;
     }
