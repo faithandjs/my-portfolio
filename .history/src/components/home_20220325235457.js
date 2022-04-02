@@ -86,11 +86,11 @@ export const Home = () => {
             <section className='work'>
                 <h3>My work</h3>
                 <div className='gallery'>
-                    {/*div className='img-box' data-toggle="modal" onClick={() => {
+                    <div className='img-box' data-toggle="modal" onClick={() => {
                          settingDatum(0)
                     }} data-target="#modal">
                         <img src={restaurant} />
-                    </div>*/}
+                    </div>
                     <div className='img-box' data-toggle="modal" onClick={() => {
                          settingDatum(1)
                     }} data-target="#modal">
