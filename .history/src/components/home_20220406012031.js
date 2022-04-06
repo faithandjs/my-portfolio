@@ -79,10 +79,6 @@ export const Home = () => {
                             <img src={sass} />
                             <p>SASS</p>
                         </li>
-                        <li>
-                            <img src={graphql} />
-                            <p>GraphQL</p>
-                        </li>
                     </ul>
                 </div>
                 <div className='about-text'>I am currently searching for internship opportunities or entry level jobs thank you and <a href='#contact'>do reach out</a>.</div>
