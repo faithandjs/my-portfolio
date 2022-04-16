@@ -3,5 +3,6 @@
 
 ### Live
 https://faithh.netlify.app/
-
 Check me out!
+
+My portfolio was made with React and Bootstrap
