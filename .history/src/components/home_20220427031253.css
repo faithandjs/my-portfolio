@@ -144,7 +144,11 @@
 .contact li {
   margin: 0 4vw;
 }
-
+@media only screen and (max-width: 400px) {
+  * .dev-icons li {
+    margin: 10px !important;
+  }
+}
 @media only screen and (max-width: 560px) {
   .dev-icons li {
     margin: 15px !important;
@@ -338,10 +342,5 @@
   }
   .contact {
     top: 0px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  * .dev-icons li {
-    margin: 5px !important;
   }
 }

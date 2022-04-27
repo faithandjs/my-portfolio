@@ -68,7 +68,7 @@ export const Home = () => {
       </section>
       <div className="spacer layer"></div>
       <section className="about">
-        
+        <h3>Profile</h3>
         <div className="about-text">
           Hey there! My name is Faith Okogbo and I am a Nigeria-based frontend
           developer. I am fascinated by the ability to tranform beautiful
@@ -112,7 +112,7 @@ export const Home = () => {
         {/*<div className="about-text">
           For  <a href="#contact">do reach out</a>.//////Thank you for checking out my portfolio, you can check
         ////  out my projects on<a href="https://github.com/faithandjs" target="_blank">
-            github<h3>Profile</h3>
+            github
           </a>
         </div>*/}
       </section>
@@ -167,7 +167,7 @@ export const Home = () => {
               href="https://github.com/faithandjs?tab=repositories"
               target="_blank"
             >
-              Github
+              More
             </a>
           </div>
           <div className="btn">

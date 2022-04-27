@@ -68,11 +68,21 @@ export const Home = () => {
       </section>
       <div className="spacer layer"></div>
       <section className="about">
-        
+        <h3>Profile</h3>
         <div className="about-text">
-          Hey there! My name is Faith Okogbo and I am a Nigeria-based frontend
-          developer. I am fascinated by the ability to tranform beautiful
-          designs into actual websites and I enjoy the proces of it.
+          Hey there! My name is Okogbo Faith and I am a Nigeria-based frontend
+          developer. I had my first coding experience in December 2020 and it
+          has been a wonderful experience so far. As a self-taught developer, I
+          have prioritised connecting with other developers to to check notes
+          with and keep me on the right track and so far, taht has been my most
+          reliable way of learning. Being a programmer means a lot of learning,
+          practicing and building and I am enjoying this journey of self
+          improvement. Thank you for checking out my portfolio, you can check
+          out my projects on{" "}
+          <a href="https://github.com/faithandjs" target="_blank">
+            github
+          </a>
+          .
         </div>
 
         <div className="skills">
@@ -108,13 +118,10 @@ export const Home = () => {
             </li>
           </ul>
         </div>
-
-        {/*<div className="about-text">
-          For  <a href="#contact">do reach out</a>.//////Thank you for checking out my portfolio, you can check
-        ////  out my projects on<a href="https://github.com/faithandjs" target="_blank">
-            github<h3>Profile</h3>
-          </a>
-        </div>*/}
+        <div className="about-text">
+          I am currently searching for internship opportunities or entry level
+          jobs thank you and <a href="#contact">do reach out</a>.
+        </div>
       </section>
 
       <section className="work">
@@ -167,7 +174,7 @@ export const Home = () => {
               href="https://github.com/faithandjs?tab=repositories"
               target="_blank"
             >
-              Github
+              More
             </a>
           </div>
           <div className="btn">

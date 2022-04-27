@@ -167,7 +167,7 @@ export const Home = () => {
               href="https://github.com/faithandjs?tab=repositories"
               target="_blank"
             >
-              Github
+              More
             </a>
           </div>
           <div className="btn">
