@@ -1,0 +1,145 @@
+
+
+/*.skills {
+  margin: 3vh 0;
+  border: 1px solid rgb(160, 160, 160);
+  margin: 3vh 0;
+  padding: 3vh 0 1vh;
+  border-right: 0;
+  border-left: 0;
+  width: 100%;
+} 
+.skills h4 {
+  padding: 0 0 3vh 0;
+  letter-spacing: 2px;
+  color: rgb(63, 63, 63);
+}
+.dev-icons {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vh 0px 0 20px !important;
+}
+.dev-icons li img {
+  width: 30px;
+}
+.dev-icons li {
+  margin: 10px;
+}
+.dev-icons span {
+  white-space: nowrap;
+}
+.js {
+  font-weight: bold;
+}
+.work {
+  z-index: 1;
+}
+.caption {
+  text-align: center;
+} */
+.contact {
+  padding: 6vh 10vw 4vh;
+  color: #fff;
+}/*
+.contact h4 {
+  margin-bottom: 3vh;
+}
+.contact img {
+  width: 30px;
+}*/
+.contact ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+.contact li {
+  margin: 0 4vw;
+}
+
+@media only screen and (max-width: 560px) {
+ 
+}
+@media only screen and (max-width: 360px) {
+  .gallery {
+    display: block;
+  } 
+  .img-box {
+    margin: 0 0 2vh 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .introduction {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 576px) {
+ 
+}
+@media only screen and (max-width: 768px) {
+ /* .skills {
+    margin: 3vh 0;
+    padding: 3vh 0 1vh;
+    border: 0;
+    border-top: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(160, 160, 160);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    display: block;
+    width: 100%;
+  } 
+  .dev-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+  .dev-icons li {
+    width: 80px;
+    padding: 5px;
+    margin: 20px;
+  }*/
+}
+@media only screen and (min-width: 768px) {
+  .introduction img {
+    display: block;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+
+  .work .btn {
+    margin-top: 5vh;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+ /* .dev-icons li {
+    width: 100px;
+    padding: 5px;
+  }*/
+  .work {
+    padding-bottom: 6vh;
+  }
+  .work,
+  .about {
+    position: relative;
+    top: 0px;
+  }
+  .contact {
+    top: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  * .dev-icons li {
+    margin: 5px !important;
+  }
+}

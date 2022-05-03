@@ -1,0 +1,52 @@
+{
+    "projects": [ 
+        {
+            "name" : "Buybuy store",
+            "img":[
+                {"0": "./images/REST-countries-api.jpg"}
+            ],
+            "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
+            "github": "https://github.com/faithandjs/redux-store",
+            "live" : "https://buybuy-store.netlify.app/",
+            "target": "_blank"
+        },
+        {
+            "name" : "Where in the World",
+            "img":[
+                {"0": "./images/REST-countries-api.jpg"}
+            ],
+            "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
+            "github": "https://github.com/faithandjs/rest-countries-api",
+            "live" : "https://fe-rest-countries-api.netlify.app/",
+            "target": "_blank"
+        },
+        {
+            "name" : "interactive comment section",
+            "img":[
+                {"0": "./images/interactive-cs.jpg"},
+                {"1": "./images/interactive-cs1.jpg"}
+            ],
+            "text": "This is an interactive comment section. It is responsive, accessible and makes use of local storage. I created this site with  React and SASS. It is a Frontend Mentor challenge",
+            "github": "https://github.com/faithandjs/interactive-comments-section-",
+            "live" : "https://frontendmentor-interactive-comments-section.netlify.app/",
+            "target": "_blank"
+        },
+        
+        {
+            "name" : "ip address tracker",
+            "img":[{"0": "./images/ip-address-tracker.jpg"}],
+            "text": "This is a Frontend Mentor challlenge where I worked with an API. It was created with React and CSS.",
+            "github": "https://github.com/faithandjs/ip-address-tracker",
+            "live" : "https://onosedeba.netlify.app/",
+            "target": "_self"
+        },
+        {
+            "name" : "My portfolio",
+            "img":[{"0": "./images/portfolio.jpg"}],
+            "text": "This is my portfolio that I designed, you are already previewing the live site. It was created with React, SASS and Bootstrap.",
+            "github": "https://github.com/faithandjs/my-portfolio",
+            "live" : "https://onosedeba.netlify.app/",
+            "target": "_self"
+        }
+    ]
+}
