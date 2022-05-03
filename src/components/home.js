@@ -29,15 +29,15 @@ export const Home = () => {
             <ul className="skills">
               <li>
                 <span className="header">Languages: </span>
-                <span>Javascript, Typescript, CSS(SASS).</span>
+                <span>Javascript, Typescript, CSS, SASS/SCSS.</span>
               </li>
               <li>
-                <span className="header">Libraries/Frameworks: </span>
-                <span>React, Bootstrap.</span>
+                <span className="header">Libraries/Tools: </span>
+                <span>React, Bootstrap, Git/Github.</span>
               </li>
               <li>
                 <span className="header">Concepts: </span>
-                <span>GraphQL, Redux.</span>
+                <span>GraphQL, Redux, RESTful APIs.</span>
               </li>
             </ul>
           </div>
