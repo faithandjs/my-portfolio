@@ -1,10 +1,7 @@
 {
   "projects": [
     {
-<<<<<<< HEAD
       "id": 1,
-=======
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "name": "Buybuy store",
       "img": [{ "0": "./images/buybuy.jpg" }],
       "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
@@ -13,10 +10,7 @@
       "target": "_blank"
     },
     {
-<<<<<<< HEAD
       "id": 2,
-=======
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "name": "Where in the World",
       "img": [{ "0": "./images/REST-countries-api.jpg" }],
       "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
@@ -25,10 +19,7 @@
       "target": "_blank"
     },
     {
-<<<<<<< HEAD
       "id": 3,
-=======
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "name": "interactive comment section",
       "img": [
         { "0": "./images/interactive-cs.jpg" },
@@ -41,10 +32,7 @@
     },
 
     {
-<<<<<<< HEAD
       "id": 4,
-=======
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "name": "ip address tracker",
       "img": [{ "0": "./images/ip-address-tracker.jpg" }],
       "text": "This is a Frontend Mentor challlenge where I worked with an API. It was created with React and CSS.",
@@ -53,19 +41,12 @@
       "target": "_self"
     },
     {
-<<<<<<< HEAD
       "id": 5,
-=======
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "name": "My portfolio",
       "img": [{ "0": "./images/portfolio.jpg" }],
       "text": "This is my portfolio that I designed, you are already previewing the live site. It was created with React, SASS and Bootstrap.",
       "github": "https://github.com/faithandjs/my-portfolio",
-<<<<<<< HEAD
       "live": "https://faithh.netlify.app/",
-=======
-      "live": "https://onosedeba.netlify.app/",
->>>>>>> 97962becb4d1c15ae3e7a469fac12aef4cee55b4
       "target": "_self"
     }
   ]

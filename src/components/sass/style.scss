@@ -4,7 +4,7 @@ $blackish: #3f3f3f;
 $blue: #0900ff;
 $bg: #1d1d1d;
 $text: #e0d9d9;
-
+$dottedSize: 5px;
 ul {
   padding-inline-start: 0px;
 }
@@ -90,7 +90,7 @@ body {
               .header {
                 font-weight: bold;
                 color: $pink;
-                border-bottom: 5px dotted $pink;
+                border-bottom: $dottedSize dotted $pink;
               }
 
               .content {
@@ -121,7 +121,7 @@ body {
 
             &:hover {
               cursor: pointer;
-              border: 5px dotted $pink;
+              border:$dottedSize dotted $pink;
             }
           }
         }
@@ -161,7 +161,7 @@ body {
           .card {
             position: relative;
             margin-bottom: 20px;
-            border: 5px dotted $text;
+            border:$dottedSize dotted $text;
             height: 250px;
             overflow-y: hidden;
             width: 100%;
@@ -192,7 +192,7 @@ body {
             }
 
             &:hover {
-              border: 5px dotted $pink;
+              border:$dottedSize dotted $pink;
 
               .content {
                 background: rgba(0, 0, 0, 0.747);
@@ -255,7 +255,7 @@ body {
             padding: 10px;
 
             &:hover {
-              border: 5px dotted $pink;
+              border: $dottedSize dotted $pink;
             }
           }
         }
@@ -300,8 +300,6 @@ body {
               justify-content: center;
               align-items: center;
 
-              border: 5px dotted rgba(0, 0, 0, 0);
-
               img {
                 padding: 5px 10px;
                 width: 20px;
@@ -310,7 +308,7 @@ body {
 
               &:hover {
                 cursor: pointer;
-                border: 5px dotted $pink;
+                border: $dottedSize dotted $pink;
               }
             }
           }
@@ -375,7 +373,9 @@ body {
     }
   }
 }
+
 @media only screen and (max-width: 510px) {
+ // $dottedSize: 4px !important;
   body {
     .body {
       .card {
