@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Buybuy store",
       "img": [{ "0": "./images/buybuy.jpg" }],
-      "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
+      "text": "This is an online shopping website I designed and developed, I made an API call to a shop API to get the items. I used redux for state management, Typescript, React and SASS.",
       "github": "https://github.com/faithandjs/redux-store",
       "live": "https://buybuy-store.netlify.app/",
       "target": "_blank"
@@ -35,7 +35,7 @@
       "id": 4,
       "name": "ip address tracker",
       "img": [{ "0": "./images/ip-address-tracker.jpg" }],
-      "text": "This is a Frontend Mentor challlenge where I worked with an API. It was created with React and CSS.",
+      "text": "This is a Frontend Mentor challlenge where I worked with an API to get a particular location with IP info. It was created with React and CSS.",
       "github": "https://github.com/faithandjs/ip-address-tracker",
       "live": "https://onosedeba.netlify.app/",
       "target": "_self"
@@ -44,7 +44,7 @@
       "id": 5,
       "name": "My portfolio",
       "img": [{ "0": "./images/portfolio.jpg" }],
-      "text": "This is my portfolio that I designed, you are already previewing the live site. It was created with React, SASS and Bootstrap.",
+      "text": "This is my portfolio that I designed, you are already previewing the live site😊 It was created with React, SASS and I created JSON file for this project.",
       "github": "https://github.com/faithandjs/my-portfolio",
       "live": "https://faithh.netlify.app/",
       "target": "_self"

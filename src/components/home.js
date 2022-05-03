@@ -21,10 +21,10 @@ export const Home = () => {
           </div>
           <div className="text">
             <div className="about">
-              Hey there! My name is Faith Okogbo and I am a Nigeria-based
-              frontend developer. I am fascinated by the ability to tranform
-              beautiful designs into actual websites and I enjoy the proces of
-              it.
+              My name is Faith Okogbo and I'm frontend developer. I am fascinated by the ability to tranform
+              beautiful designs into actual websites, hence frontend development was a natural path for me. 
+
+
             </div>
             <ul className="skills">
               <li>
