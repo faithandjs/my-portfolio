@@ -121,7 +121,7 @@ body {
 
             &:hover {
               cursor: pointer;
-              border:$dottedSize dotted $pink;
+              border: $dottedSize dotted $pink;
             }
           }
         }
@@ -161,7 +161,7 @@ body {
           .card {
             position: relative;
             margin-bottom: 20px;
-            border:$dottedSize dotted $text;
+            border: $dottedSize dotted $text;
             height: 250px;
             overflow-y: hidden;
             width: 100%;
@@ -192,7 +192,7 @@ body {
             }
 
             &:hover {
-              border:$dottedSize dotted $pink;
+              border: $dottedSize dotted $pink;
 
               .content {
                 background: rgba(0, 0, 0, 0.747);
@@ -261,14 +261,12 @@ body {
         }
       }
     }
-
-    
   }
 
-.img-box img:hover {
-  cursor: pointer;
+  .img-box img:hover {
+    cursor: pointer;
+  }
 }
-
 @media only screen and (max-width: 768px) {
   body {
     .body {
@@ -278,7 +276,7 @@ body {
         }
 
         .image {
-          display: none;
+          display: none !important;
         }
       }
     }
@@ -342,7 +340,6 @@ body {
           .content {
             padding: 10px !important;
 
-
             .name {
               font-size: 14px;
             }
@@ -375,7 +372,7 @@ body {
 }
 
 @media only screen and (max-width: 510px) {
- // $dottedSize: 4px !important;
+  // $dottedSize: 4px !important;
   body {
     .body {
       .card {
@@ -402,5 +399,4 @@ body {
       }
     }
   }
-}
 }
