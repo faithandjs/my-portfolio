@@ -11,33 +11,42 @@ import Card from "./card";
 export const Home = () => {
   const [data, setData] = useState(require("./data.json"));
 
-  
   return (
     <div className="body">
       <section className="introduction">
         <div className="texts">
           <div className="h1">
-            <h1>hi, i'm Faith</h1>
+            <h1>
+              <span className="hi">hi, i'm Faith</span>
+              <br />
+              <span>
+                and I'm{" "}
+                <span style={{ color: "#ffa4c2" }}>frontend developer</span>
+                <span className="wave">👋🏽</span>
+              </span>
+            </h1>
           </div>
           <div className="text">
             <div className="about">
-              My name is Faith Okogbo and I'm frontend developer. I am fascinated by the ability to tranform
-              beautiful designs into actual websites, hence frontend development was a natural path for me. 
-
-
+              I have always been fascinated by the ability to transform
+              beautiful web designs into actual websites, hence frontend
+              development was a natural path for me. 
+              <br /><br />
+              In my free time, I enjoy reading, watching movies, exercising or sleeping.
+              {/* */}
             </div>
             <ul className="skills">
               <li>
-                <span className="header">Languages: </span>
-                <span>Javascript, Typescript, CSS, SASS/SCSS.</span>
+                <span className="header">Languages:</span>
+                <span> Javascript, Typescript, CSS, SASS/SCSS.</span>
               </li>
               <li>
-                <span className="header">Libraries/Tools: </span>
-                <span>React, Bootstrap, Git/Github.</span>
+                <span className="header">Libraries/Tools:</span>
+                <span> Next Js, React, Bootstrap, Git/Github.</span>
               </li>
               <li>
-                <span className="header">Concepts: </span>
-                <span>GraphQL, Redux, RESTful APIs.</span>
+                <span className="header">Concepts:</span>
+                <span> GraphQL, Redux, RESTful APIs.</span>
               </li>
             </ul>
           </div>
@@ -82,17 +91,15 @@ export const Home = () => {
           <Card props={data.projects[3]} />
           <Card props={data.projects[4]} />
         </div>
-          
-          <div className="cv">
-            <a href="okogbo-faith-cv.pdf" download>
-              Download CV
-            </a>
-          </div>
+
+        <div className="cv">
+          <a href="okogbo-faith-cv.pdf" download>
+            Download CV
+          </a>
+        </div>
       </section>
-      
-      <footer className="contact" id="contact">
-       
-      </footer>
+
+      <footer className="contact" id="contact"></footer>
     </div>
   );
 };

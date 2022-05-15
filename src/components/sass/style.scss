@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,100;1,200;1,800;1,900&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
 $pink: #ffa4c2;
 $blackish: #3f3f3f;
 $blue: #0900ff;
 $bg: #1d1d1d;
-$text: #e0d9d9;
+$text: #fff;
 $dottedSize: 5px;
 ul {
   padding-inline-start: 0px;
@@ -30,9 +31,20 @@ ul {
     text-shadow: 0 0 10px #fff;
   }
 }
+@keyframes waving {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    background-color: #0900ff;
+  }
 
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    background-color: #ffa4c2;
+  }
+}
 body {
-  //background: $bg;
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #252829 0%, #000000 88%);
   background-attachment: fixed;
@@ -40,41 +52,54 @@ body {
   .body {
     height: 100%;
     position: relative;
-    margin: auto;
+    margin: auto auto 20px;
     max-width: 1300px;
     font-family: "Montserrat", sans-serif;
 
     .introduction {
       text-align: left;
       display: flex;
-      align-items: center;
       justify-content: space-between;
       color: #fff;
-
+      font-weight: 100;
       .texts {
         padding-right: 20px;
         max-width: 500px;
 
         .h1 {
-          //  grid-area: "h1";
           display: flex;
           justify-content: space-between;
           align-items: center;
-
           h1 {
-            text-shadow: 0 0 5px #fff;
-            text-transform: uppercase;
-            line-height: 3;
-            animation-name: glow;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            font-family: "Press Start 2P", cursive;
+            margin: 9vh 0 5vh;
+            .hi {
+              text-shadow: 0 0 5px $pink;
+              font-family: "Rubik Puddles", cursive, Copperplate, Papyrus,
+                fantasy;
+              text-transform: capitalize;
+              color: #ffa4c2;
+              word-spacing: 5px;
+              font-weight: 100;
+              line-height: 1.3;
+              animation-name: glow;
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+              font-size: 4.2rem;
+            }
+            span {
+              font-size: 1.25rem;
+              font-weight: bold;
+              .wave {
+                font-size: 2rem;
+              }
+            }
           }
         }
 
         .text {
           padding-top: 2px;
           color: #fff;
+          margin-bottom: 3vh;
 
           .about {
             text-align: justify;
@@ -92,9 +117,6 @@ body {
                 color: $pink;
                 border-bottom: $dottedSize dotted $pink;
               }
-
-              .content {
-              }
             }
           }
         }
@@ -106,13 +128,24 @@ body {
           li {
             margin-right: 10px;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 5px dotted rgba(0, 0, 0, 0);
-
+            position: relative;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background-color: #00000085;
+              border-radius: 50%;
+            }
             img {
               padding: 5px 10px;
               width: 25px;
@@ -120,8 +153,11 @@ body {
             }
 
             &:hover {
+              &::before {
+                background-color: #00000000;
+              }
               cursor: pointer;
-              border: $dottedSize dotted $pink;
+              background-color: #00000085;
             }
           }
         }
@@ -130,11 +166,11 @@ body {
       .image {
         min-width: 200px;
         max-width: 300px;
-        padding: 80px 2vw 0 20px;
+        padding: 0px 2vw 0 20px;
+        margin-top: 22vh;
 
         img {
           margin: auto;
-          //width: 17vw;
           width: -webkit-fill-available;
         }
       }
@@ -209,12 +245,9 @@ body {
 
                 .name {
                   text-transform: uppercase;
-                  font-weight: bold; //check for fonts
-                  word-spacing: 5px;
+                  font-weight: bold;
                   letter-spacing: 1.2px;
-                }
-
-                .text {
+                  color: $pink;
                 }
 
                 .icons {
@@ -233,9 +266,6 @@ body {
                       background-color: $bg;
                     }
                   }
-
-                  .github {
-                  }
                 }
               }
             }
@@ -243,7 +273,6 @@ body {
         }
 
         .cv {
-          //font-size: large;
           margin-top: 3vh;
 
           a {
@@ -271,8 +300,44 @@ body {
   body {
     .body {
       .introduction {
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         .texts {
           padding-right: 0;
+          .h1 {
+            h1 {
+              width: -webkit-fill-available;
+              .hi {
+                font-size: 4rem;
+              }
+
+              span {
+                font-size: 1.5rem;
+                .wave {
+                  font-size: 1.9rem;
+                }
+              }
+            }
+          }
+          .text {
+            .about {
+              text-align: unset;
+            }
+            ul.skills {
+              display: flex;
+              li {
+                line-height: 2;
+                padding: 10px;
+              }
+            }
+          }
+          ul.contact {
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: space-evenly;
+          }
         }
 
         .image {
@@ -292,8 +357,8 @@ body {
             li {
               margin-right: 10px;
               border-radius: 50%;
-              width: 40px;
-              height: 40px;
+              width: 45px;
+              height: 45px;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -302,11 +367,6 @@ body {
                 padding: 5px 10px;
                 width: 20px;
                 height: 20px;
-              }
-
-              &:hover {
-                cursor: pointer;
-                border: $dottedSize dotted $pink;
               }
             }
           }
@@ -351,7 +411,6 @@ body {
             .icons {
               .live,
               .github {
-                // padding: 5px 10px;
                 img {
                   width: 14px !important;
                 }
@@ -361,8 +420,6 @@ body {
                 }
               }
 
-              .github {
-              }
             }
           }
         }
@@ -372,15 +429,34 @@ body {
 }
 
 @media only screen and (max-width: 510px) {
-  // $dottedSize: 4px !important;
   body {
     .body {
+      .introduction .texts {
+        .h1 {
+          h1 {
+            span {
+              font-size: 1.1rem;
+            }
+          }
+        }
+        .text {
+          .about {
+            text-align: justify;
+          }
+          ul.skills {
+            display: block;
+            text-align: start;
+            li {
+              line-height: 1.5;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
       .card {
-        //  height: max-content !important;
         height: 200px !important;
 
         .img-box {
-          // display: none;
           width: 100%;
 
           .img1 {
@@ -390,12 +466,15 @@ body {
             content: url("../images/rest-api-ss.png");
           }
           .img3 {
-            content: url("../images/interactive-cs-ss.png");
+            content: url("../images/rpsls-ss.png");
           }
           .img4 {
-            content: url("../images/ip-addy-ss.png");
+            content: url("../images/interactive-cs-ss.png");
           }
           .img5 {
+            content: url("../images/ip-addy-ss.png");
+          }
+          .img6 {
             content: url("../images/portfolio-ss.png");
           }
         }

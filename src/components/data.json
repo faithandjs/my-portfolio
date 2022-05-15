@@ -20,6 +20,15 @@
     },
     {
       "id": 3,
+      "name": "rock, paper, scissors ( lizard, spork )",
+      "img": [{ "0": "./images/rpsls.jpg" }],
+      "text": "This is adaptation of th Rock, Paper, Scissors game. I created this site with  React and SASS. It is a Frontend Mentor challenge",
+      "github": "https://github.com/faithandjs/rock-paper-scissors",
+      "live": "https://rock-paper-scissors-lizard-spock-fe.netlify.app/",
+      "target": "_blank"
+    },
+    {
+      "id": 4,
       "name": "interactive comment section",
       "img": [
         { "0": "./images/interactive-cs.jpg" },
@@ -32,7 +41,7 @@
     },
 
     {
-      "id": 4,
+      "id": 5,
       "name": "ip address tracker",
       "img": [{ "0": "./images/ip-address-tracker.jpg" }],
       "text": "This is a Frontend Mentor challlenge where I worked with an API to get a particular location with IP info. It was created with React and CSS.",
@@ -41,7 +50,7 @@
       "target": "_self"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "My portfolio",
       "img": [{ "0": "./images/portfolio.jpg" }],
       "text": "This is my portfolio that I designed, you are already previewing the live site😊 It was created with React, SASS and I created JSON file for this project.",
