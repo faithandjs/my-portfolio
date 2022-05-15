@@ -20,7 +20,7 @@ export const Home = () => {
               <span className="hi">hi, i'm Faith</span>
               <br />
               <span>
-                and I'm{" "}
+                and I'm a{" "}
                 <span style={{ color: "#ffa4c2" }}>frontend developer</span>
                 <span className="wave">👋🏽</span>
               </span>

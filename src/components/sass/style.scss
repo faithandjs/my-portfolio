@@ -171,6 +171,7 @@ body {
 
         img {
           margin: auto;
+          width: -moz-available;
           width: -webkit-fill-available;
         }
       }
