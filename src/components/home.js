@@ -32,7 +32,7 @@ export const Home = () => {
               beautiful web designs into actual websites, hence frontend
               development was a natural path for me. 
               <br /><br />
-              In my free time, I enjoy reading, watching movies, exercising or sleeping.
+              In my free time, I enjoy reading, watching movies or exercising.
               {/* */}
             </div>
             <ul className="skills">
@@ -90,6 +90,7 @@ export const Home = () => {
           <Card props={data.projects[2]} />
           <Card props={data.projects[3]} />
           <Card props={data.projects[4]} />
+          <Card props={data.projects[5]} />
         </div>
 
         <div className="cv">
