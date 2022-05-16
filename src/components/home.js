@@ -90,7 +90,6 @@ export const Home = () => {
           <Card props={data.projects[2]} />
           <Card props={data.projects[3]} />
           <Card props={data.projects[4]} />
-          <Card props={data.projects[5]} />
         </div>
 
         <div className="cv">
