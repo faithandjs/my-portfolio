@@ -104,18 +104,41 @@ body {
           .about {
             text-align: justify;
           }
+          .skills {
+            padding: 40px 0 20px;
 
-          ul.skills {
-            list-style-type: none;
+            .head {
+              text-transform: uppercase;
+              font-weight: 600;
+              color: $pink;
+              border-bottom: $dottedSize dotted $pink;
+              width: max-content;
+            }
+            .technical {
+              padding-bottom: 16px;
+              ul {
+                list-style-type: none;
 
-            li {
-              padding: 10px 0;
-              line-height: 1.5;
+                li {
+                  padding: 10px 0;
+                  line-height: 1.5;
 
-              .header {
-                font-weight: bold;
-                color: $pink;
-                border-bottom: $dottedSize dotted $pink;
+                  .header {
+                    color: $pink;
+                    //font-weight: bold;
+                    //border-bottom: $dottedSize dotted $pink;
+                  }
+                }
+              }
+            }
+
+            .non-tech {
+              ul {
+                // list-style-image: linear-gradient($pink, $pink);
+                list-style-type: circle;
+                li {
+                  text-transform: capitalize;
+                }
               }
             }
           }
@@ -327,11 +350,30 @@ body {
             .about {
               text-align: unset;
             }
-            ul.skills {
-              display: flex;
-              li {
-                line-height: 2;
-                padding: 10px;
+            .skills {
+              .head {
+                margin: auto;
+              }
+              .technical {
+                .header {
+                  display: block;
+                }
+                ul {
+                  display: flex;
+
+                  li {
+                    line-height: 2;
+                    padding: 10px;
+                  }
+                }
+              }
+              .non-tech {
+                ul {
+                  li {
+                    margin: auto;
+                    width: max-content;
+                  }
+                }
               }
             }
           }
@@ -421,7 +463,6 @@ body {
                   background-color: darken(#fff, 10%) !important;
                 }
               }
-
             }
           }
         }
@@ -445,13 +486,21 @@ body {
           .about {
             text-align: justify;
           }
-          ul.skills {
-            display: block;
-            text-align: start;
-            li {
-              line-height: 1.5;
-              padding: 10px 0;
+          .skills {
+            .technical {
+              .header {
+                display: unset;
+              }
+              ul {
+                display: block;
+                text-align: start;
+                li {
+                  line-height: 1.5;
+                  padding: 10px 0;
+                }
+              }
             }
+           // .non-tech { }
           }
         }
       }

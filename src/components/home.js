@@ -30,25 +30,37 @@ export const Home = () => {
             <div className="about">
               I have always been fascinated by the ability to transform
               beautiful web designs into actual websites, hence frontend
-              development was a natural path for me. 
-              <br /><br />
+              development was a natural path for me.
+              <br />
+              <br />
               In my free time, I enjoy reading, watching movies or exercising.
               {/* */}
             </div>
-            <ul className="skills">
-              <li>
-                <span className="header">Languages:</span>
-                <span> Javascript, Typescript, CSS, SASS/SCSS.</span>
-              </li>
-              <li>
-                <span className="header">Libraries/Tools:</span>
-                <span> Next Js, React, Bootstrap, Git/Github.</span>
-              </li>
-              <li>
-                <span className="header">Concepts:</span>
-                <span> GraphQL, Redux, RESTful APIs.</span>
-              </li>
-            </ul>
+            <div className="skills">
+              <div className="technical">
+                <div className="head">technical skills</div>
+                <ul>
+                  <li>
+                    <span className="header">Languages:</span>
+                    <span> Javascript, Typescript, CSS, SASS/SCSS.</span>
+                  </li>
+                  <li>
+                    <span className="header">Libraries/Tools:</span>
+                    <span> Next Js, React, Bootstrap, Git/Github.</span>
+                  </li>
+                  <li>
+                    <span className="header">Concepts:</span>
+                    <span> GraphQL, Redux, RESTful APIs.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="non-tech">
+                <div className="head">Non-technical skills</div>
+                <ul>
+                  <li className="item">video editing.</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <ul className="contact">
             <li>
