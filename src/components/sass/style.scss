@@ -114,18 +114,20 @@ body {
               width: max-content;
             }
             ul {
-              list-style-type: none;
-              li::before {
+              list-style-type: circle;
+
+              /*li::before {
                 content: "\25CB";
                 font-weight: bolder;
                 display: inline-block;
                 width: 1em;
                 margin-left: -1em;
-              }
+              }*/
             }
             .technical {
               padding-bottom: 16px;
               ul {
+                list-style-image: radial-gradient($pink, $pink);
                 li {
                   padding: 10px 0;
                   line-height: 1.5;
@@ -140,6 +142,7 @@ body {
             }
             .non-tech {
               ul {
+                list-style-image: radial-gradient(#fff, #fff);
                 li {
                   text-transform: capitalize;
                   &::before {
@@ -372,9 +375,9 @@ body {
                   li {
                     line-height: 2;
                     padding: 10px;
-                    &::before {
+                    /*       &::before {
                       display: none;
-                    }
+                    }*/
                   }
                 }
               }
@@ -510,10 +513,10 @@ body {
                 li {
                   line-height: 1.5;
                   padding: 10px 0;
-
-                  &::before {
+                  list-style-type: circle;
+                  /*    &::before {
                     display: inline-block;
-                  }
+                  }*/
                 }
               }
             }
