@@ -31,11 +31,20 @@ export const Home = () => {
               I have always been fascinated by the ability to transform
               beautiful web designs into actual websites, hence frontend
               development was a natural path for me.
-              <br />
-              <br />
-              In my free time, I enjoy reading, watching movies or exercising.
-              {/* */}
+              <br /> <br />
             </div>
+            <div className="services">
+              <p className="head">services</p>
+              <ul>
+                <li>
+                  I develop accessible webpages for web and mobile applications.
+                </li>
+                <li>I manage and maintain websites.</li>
+                {/*In my free time, I enjoy reading, watching movies or exercising.
+             <li>I manage and maintain websites.</li> */}
+              </ul>
+            </div>{" "}
+            <br /> 
             <div className="skills">
               <div className="technical">
                 <div className="head">technical skills</div>
@@ -60,7 +69,8 @@ export const Home = () => {
                   <li className="item">video editing.</li>
                 </ul>
               </div>
-            </div>
+            </div>{" "}
+            <br /> 
           </div>
           <ul className="contact">
             <li>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,100;1,200;1,800;1,900&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 $pink: #ffa4c2;
 $blackish: #3f3f3f;
 $blue: #0900ff;
@@ -44,8 +45,10 @@ ul {
   }
 }
 body {
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #252829 0%, #000000 88%);
+  font-size: 20px;
+  background-color: #000000;
+ // background-color: #2d3436;
+  //background-image: linear-gradient(315deg, #252829 0%, #000000 88%);
   background-attachment: fixed;
 
   .body {
@@ -53,7 +56,8 @@ body {
     position: relative;
     margin: auto auto 20px;
     max-width: 1300px;
-    font-family: "Montserrat", sans-serif;
+   // font-family: "Montserrat", sans-serif;
+    font-family: 'Redressed', cursive;
 
     .introduction {
       text-align: left;
@@ -99,41 +103,38 @@ body {
           padding-top: 2px;
           color: #fff;
           margin-bottom: 3vh;
-
+          ul {
+            list-style-type: square;
+            li {
+              padding: 8px 0;
+              line-height: 1.5;
+            }
+          }
           .about {
             text-align: justify;
+
+            line-height: 1.35;
+          }
+          .services {
+            text-align: start;
+          }
+          .head {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $pink;
+            border-bottom: $dottedSize dotted $pink;
+            width: max-content;
           }
           .skills {
-            padding: 40px 0 20px;
+            //padding: 30px 0 20px;
 
-            .head {
-              text-transform: uppercase;
-              font-weight: 600;
-              color: $pink;
-              border-bottom: $dottedSize dotted $pink;
-              width: max-content;
-            }
             ul {
-              list-style-type: circle;
-
-              /*li::before {
-                content: "\25CB";
-                font-weight: bolder;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
-              }*/
             }
             .technical {
               padding-bottom: 16px;
               ul {
                 list-style-image: radial-gradient($pink, $pink);
                 li {
-                  padding: 10px 0;
-                  line-height: 1.5;
-                  &::before {
-                    color: $pink;
-                  }
                   .header {
                     color: $pink;
                   }
@@ -145,9 +146,6 @@ body {
                 list-style-image: radial-gradient(#fff, #fff);
                 li {
                   text-transform: capitalize;
-                  &::before {
-                    color: #fff;
-                  }
                 }
               }
             }
@@ -157,15 +155,13 @@ body {
         ul.contact {
           display: flex;
           justify-content: start;
-
+          list-style-type: none;
           li {
             margin-right: 10px;
             border-radius: 50%;
             width: 55px;
             height: 55px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
             position: relative;
             &::before {
               content: "";
@@ -178,6 +174,13 @@ body {
               right: 0;
               background-color: #00000085;
               border-radius: 50%;
+            }
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
             }
             img {
               padding: 5px 10px;
@@ -230,7 +233,7 @@ body {
 
           .card {
             position: relative;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border: $dottedSize dotted $text;
             height: 250px;
             overflow-y: hidden;
@@ -267,7 +270,7 @@ body {
 
               .content {
                 background: rgba(0, 0, 0, 0.747);
-                padding: 30px 40px;
+                padding: 30px 40px 20px;
                 display: grid;
                 align-content: end;
 
@@ -291,14 +294,20 @@ body {
 
                   .live,
                   .github {
-                    padding: 5px 10px;
-
+                    //                    padding: 10px;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 7px;
                     img {
                       width: 20px;
                     }
 
                     &:hover {
-                      background-color: $bg;
+                      background-color: rgba(255, 255, 255, 0.192);
+                      border-radius: 50%;
                     }
                   }
                 }
@@ -313,7 +322,7 @@ body {
           a {
             color: $text !important;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 1.4rem;
             text-transform: uppercase;
             font-weight: bold;
             padding: 10px;
@@ -338,10 +347,10 @@ body {
         width: -webkit-fill-available;
         display: flex;
         justify-content: center;
-        text-align: center;
         .texts {
           padding-right: 0;
           .h1 {
+            text-align: center;
             h1 {
               width: -webkit-fill-available;
               .hi {
@@ -357,7 +366,7 @@ body {
             }
           }
           .text {
-            .about {
+            /* .about {
               text-align: unset;
             }
             .skills {
@@ -371,13 +380,12 @@ body {
                 ul {
                   display: flex;
                   list-style-type: none;
+                  list-style-image: none;
 
                   li {
                     line-height: 2;
                     padding: 10px;
-                    /*       &::before {
-                      display: none;
-                    }*/
+                  
                   }
                 }
               }
@@ -389,7 +397,7 @@ body {
                   }
                 }
               }
-            }
+            }*/
           }
           ul.contact {
             width: -webkit-fill-available;
@@ -468,12 +476,10 @@ body {
             .icons {
               .live,
               .github {
+                width: 32px !important;
+                height: 32px !important;
                 img {
                   width: 14px !important;
-                }
-
-                &:hover {
-                  background-color: darken(#fff, 10%) !important;
                 }
               }
             }
@@ -511,12 +517,8 @@ body {
                 text-align: start;
 
                 li {
-                  line-height: 1.5;
-                  padding: 10px 0;
                   list-style-type: circle;
-                  /*    &::before {
-                    display: inline-block;
-                  }*/
+                  list-style-image: radial-gradient($pink, $pink);
                 }
               }
             }
