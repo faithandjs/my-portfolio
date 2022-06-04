@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Where in the World",
       "img": [{ "0": "./images/REST-countries-api.jpg" }],
-      "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls. It is a Frontend Mentor challenge",
+      "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls.",
       "github": "https://github.com/faithandjs/rest-countries-api",
       "live": "https://fe-rest-countries-api.netlify.app/",
       "target": "_blank"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "rock, paper, scissors ( lizard, spork )",
       "img": [{ "0": "./images/rpsls.jpg" }],
-      "text": "This is adaptation of th Rock, Paper, Scissors game. I created this site with  React and SASS. It is a Frontend Mentor challenge",
+      "text": "This is adaptation of th Rock, Paper, Scissors game. I created this site with  React and SASS.",
       "github": "https://github.com/faithandjs/rock-paper-scissors",
       "live": "https://rock-paper-scissors-lizard-spock-fe.netlify.app/",
       "target": "_blank"
@@ -34,7 +34,7 @@
         { "0": "./images/interactive-cs.jpg" },
         { "1": "./images/interactive-cs1.jpg" }
       ],
-      "text": "This is an interactive comment section. It is responsive, accessible and makes use of local storage. I created this site with  React and SASS. It is a Frontend Mentor challenge",
+      "text": "This is an interactive comment section. It is responsive, accessible and makes use of local storage. I created this site with  React and SASS.",
       "github": "https://github.com/faithandjs/interactive-comments-section-",
       "live": "https://frontendmentor-interactive-comments-section.netlify.app/",
       "target": "_blank"
@@ -44,7 +44,7 @@
       "id": 5,
       "name": "ip address tracker",
       "img": [{ "0": "./images/ip-address-tracker.jpg" }],
-      "text": "This is a Frontend Mentor challlenge where I worked with an API to get a particular location with IP info. It was created with React and CSS.",
+      "text": "In this project I worked with an API to get a particular location with IP info. It was created with React and CSS.",
       "github": "https://github.com/faithandjs/ip-address-tracker",
       "live": "https://onosedeba.netlify.app/",
       "target": "_self"
