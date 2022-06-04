@@ -185,6 +185,7 @@ body {
             }
 
             &:hover {
+              z-index: 10;
               &::before {
                 background-color: #00000000;
               }
