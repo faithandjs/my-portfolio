@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,100;1,200;1,800;1,900&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 $pink: #ffa4c2;
 $blackish: #3f3f3f;
 $blue: #0900ff;
@@ -47,7 +47,7 @@ ul {
 body {
   font-size: 20px;
   background-color: #000000;
- // background-color: #2d3436;
+  // background-color: #2d3436;
   //background-image: linear-gradient(315deg, #252829 0%, #000000 88%);
   background-attachment: fixed;
 
@@ -56,8 +56,8 @@ body {
     position: relative;
     margin: auto auto 20px;
     max-width: 1300px;
-   // font-family: "Montserrat", sans-serif;
-    font-family: 'Redressed', cursive;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "Redressed", cursive;
 
     .introduction {
       text-align: left;
@@ -126,10 +126,6 @@ body {
             width: max-content;
           }
           .skills {
-            //padding: 30px 0 20px;
-
-            ul {
-            }
             .technical {
               padding-bottom: 16px;
               ul {
@@ -287,7 +283,9 @@ body {
                   letter-spacing: 1.2px;
                   color: $pink;
                 }
-
+                .text {
+                  font-size: 1.3rem;
+                }
                 .icons {
                   display: flex;
                   justify-content: flex-end;
