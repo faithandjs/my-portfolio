@@ -37,7 +37,7 @@ export const Home = () => {
               <p className="head">services</p>
               <ul>
                 <li>
-                  I develop accessible webpages for web and mobile applications.
+                  I develop responsive and accessible webpages.
                 </li>
                 <li>I manage and maintain websites.</li>
                 {/*In my free time, I enjoy reading, watching movies or exercising.
