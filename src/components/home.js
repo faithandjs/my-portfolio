@@ -17,11 +17,11 @@ export const Home = () => {
         <div className="texts">
           <div className="h1">
             <h1>
-              <span className="hi">hi, i'm Faith</span>
+              <span className="hi">hi, i'm Faith,</span>
               <br />
               <span>
-                and I'm a{" "}
-                <span style={{ color: "#ffa4c2" }}>frontend developer</span>
+                <span className="pink">faith okogbo </span>and I'm a{" "}
+                <span className="pink">frontend developer</span>
                 <span className="wave">👋🏽</span>
               </span>
             </h1>
@@ -36,15 +36,13 @@ export const Home = () => {
             <div className="services">
               <p className="head">services</p>
               <ul>
-                <li>
-                  I develop responsive and accessible webpages.
-                </li>
+                <li>I develop responsive and accessible webpages.</li>
                 <li>I manage and maintain websites.</li>
                 {/*In my free time, I enjoy reading, watching movies or exercising.
              <li>I manage and maintain websites.</li> */}
               </ul>
             </div>{" "}
-            <br /> 
+            <br />
             <div className="skills">
               <div className="technical">
                 <div className="head">technical skills</div>
@@ -70,7 +68,7 @@ export const Home = () => {
                 </ul>
               </div>
             </div>{" "}
-            <br /> 
+            <br />
           </div>
           <ul className="contact">
             <li>
