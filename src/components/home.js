@@ -17,10 +17,9 @@ export const Home = () => {
         <div className="texts">
           <div className="h1">
             <h1>
-              <span className="hi">hi, i'm Faith,</span>
+              <span className="hi">hi, i'm Faith</span>
               <br />
-              <span>
-                <span className="pink">faith okogbo </span>and I'm a{" "}
+              <span>and I'm a{" "}
                 <span className="pink">frontend developer</span>
                 <span className="wave">👋🏽</span>
               </span>
