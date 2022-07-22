@@ -1,15 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,100;1,200;1,800;1,900&family=Press+Start+2P&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,100;1,200;1,800;1,900&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 // $pink: #48f3ff;
 // $pink: #67b8be;
 $pink: #ffa4c2;
+$pink-light: #ffa4c2bd;
 $blackish: #3f3f3f;
 $bg: #1d1d1d;
 $text: #fff;
 $dottedSize: 5px;
 ul {
   padding-inline-start: 0px;
+  margin: 0;
+  padding: 0;
 }
 button {
   border: 0;
@@ -57,6 +63,7 @@ button {
   color: $pink;
 }
 body {
+  min-width: 310px;
   font-size: 20px;
   background-color: #000000;
   // background-color: #2d3436;
@@ -69,8 +76,9 @@ body {
     margin: auto auto 20px;
     max-width: 1300px;
     min-width: 278px;
-    // font-family: "Montserrat", sans-serif;
-    font-family: "Redressed", cursive;
+    // font-family: "Redressed", cursive;
+
+    font-family: "Cormorant Garamond", serif;
 
     .introduction {
       text-align: left;
@@ -244,7 +252,7 @@ body {
           .card {
             position: relative;
             margin-bottom: 15px;
-            border: $dottedSize dotted $text;
+            border: $dottedSize dotted #7c7c7c;
             height: 250px;
             overflow-y: hidden;
             width: 100%;
@@ -270,13 +278,36 @@ body {
 
               .name,
               .text,
-              .lower {
+              .icons {
                 display: none;
+              }
+
+              .lower {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                ul {
+                  list-style-type: none;
+                  display: flex;
+                  flex-wrap: wrap;
+                  li {
+                    text-transform: capitalize;
+                    height: max-content;
+                    margin-right: 2px;
+                    padding: 5px 6px;
+                    border-radius: 3px;
+                    color: $text;
+                    font-size: 1.1rem;
+                    background-color: hsla(0, 0%, 15%, 0.651);
+                    white-space: nowrap;
+                  }
+                }
               }
             }
 
             &:hover {
-              border: $dottedSize dotted $pink;
+              border: $dottedSize dotted $pink-light;
 
               .content {
                 background: rgba(0, 0, 0, 0.747);
@@ -301,41 +332,32 @@ body {
                   font-size: 1.25rem;
                 }
                 .lower {
-                  display: flex;
-                  justify-content: space-between;
+                  height: unset;
+                  align-items: baseline;
                   ul {
-                    list-style-type: none;
-                    display: flex;
                     li {
-                      margin-right: 2px;
-                      padding: 5px 6px;
-                      border-radius: 3px;
-                      // color:darken($color: $pink, $amount: 10%) ;
-                      font-size: 1.1rem;
-                      background-color: #3d3a3aa2;
+                      background-color: hsla(0, 3%, 23%, 0.635);
                     }
                   }
-                }
-                .icons {
-                  display: flex;
-                  justify-content: flex-end;
-
-                  .live,
-                  .github {
-                    //                    padding: 10px;
-                    width: 45px;
-                    height: 45px;
+                  .icons {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 7px;
-                    img {
-                      width: 20px;
-                    }
+                    .live,
+                    .github {
+                      //                    padding: 10px;
+                      width: 45px;
+                      height: 45px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-left: 7px;
+                      img {
+                        width: 20px;
+                      }
 
-                    &:hover {
-                      background-color: rgba(255, 255, 255, 0.192);
-                      border-radius: 50%;
+                      &:hover {
+                        background-color: rgba(255, 255, 255, 0.192);
+                        border-radius: 50%;
+                      }
                     }
                   }
                 }
@@ -348,7 +370,7 @@ body {
           margin-top: 3vh;
 
           a {
-            color: $text !important;
+            color: $text;
             text-decoration: none;
             font-size: 1.2rem;
             text-transform: capitalize;
@@ -381,16 +403,6 @@ body {
             text-align: center;
             h1 {
               width: -webkit-fill-available;
-              .hi {
-                //   font-size: 4rem;
-              }
-
-              span {
-                // font-size: 1.5rem;
-                .wave {
-                  // font-size: 1.9rem;
-                }
-              }
             }
           }
           ul.contact {
@@ -401,7 +413,7 @@ body {
         }
 
         .image {
-          display: none !important;
+          display: none;
         }
       }
     }
@@ -409,7 +421,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
     .body {
       .introduction {
         .texts {
@@ -433,8 +445,8 @@ body {
         }
       }
 
-      .card {
-        height: 200px !important;
+      section.work .gallery .card {
+        height: 200px;
 
         .img-box {
           width: 100%;
@@ -444,43 +456,39 @@ body {
           }
         }
 
-        .content {
-          .name,
-          .text,
-          .icons {
-            padding-top: 5px !important;
-          }
-        }
-
         &:hover {
           .img-box {
             display: none;
           }
 
           .content {
-            padding: 10px !important;
-
+            padding: 10px;
+            .name,
+            .text,
+            .icons {
+              padding-top: 5px;
+            }
             .name {
               font-size: 14px;
             }
 
             .text {
-              font-size: 14px;
+              font-size: 1.15rem;
             }
             .lower {
               width: 100%;
-              justify-content: flex-end !important;
+              justify-content: flex-end;
               ul {
-                display: none !important;
+                display: none;
               }
             }
             .icons {
               .live,
               .github {
-                width: 32px !important;
-                height: 32px !important;
+                width: 32px;
+                height: 32px;
                 img {
-                  width: 14px !important;
+                  width: 14px;
                 }
               }
             }
@@ -494,13 +502,6 @@ body {
   body {
     .body {
       .introduction .texts {
-        .h1 {
-          h1 {
-            span {
-              //  font-size: 1.1rem;
-            }
-          }
-        }
         .text {
           .about {
             text-align: justify;
@@ -533,8 +534,8 @@ body {
           }
         }
       }
-      .card {
-        height: 230px !important;
+      section.work .gallery .card {
+        height: 230px;
 
         .img-box {
           width: 100%;
