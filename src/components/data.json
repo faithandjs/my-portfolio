@@ -2,18 +2,20 @@
   "projects": [
     {
       "id": 1,
-      "name": "Buybuy store",
-      "img": [{ "0": "./images/buybuy.jpg" }],
-      "text": "This is an online shopping website I designed and developed, I made an API call to a shop API to get the items. I used redux for state management, Typescript, React and SASS.",
-      "github": "https://github.com/faithandjs/redux-store",
-      "live": "https://buybuy-store.netlify.app/",
+      "name": "Vivienne Daniels Store",
+      "img": [{ "0": "./images/VD.PNG" }],
+      "tags": ["SASS", "Gatsby JS", "shopify", "context API"],
+      "text": "This is an online shopping website I designed and developed. Users can browse products, add multiple quantities of diffrent variants to cart, update their wishlist and checkout items.",
+      "github": "https://github.com/faithandjs/vivienne-daniels-store",
+      "live": "https://viviennedanielsstoremain.gatsbyjs.io/",
       "target": "_blank"
     },
     {
       "id": 2,
       "name": "Where in the World",
       "img": [{ "0": "./images/REST-countries-api.jpg" }],
-      "text": "This is a website that calls a REST API which returns data about the countries of the world. I built this site with Typescript, SASS and I used Axios to handle the API calls.",
+      "tags": ["SASS", "React JS", "localstorage"],
+      "text": "This is a website that calls a REST API which returns data about the countries of the world. Users preview diffrent countries' flags and names and can search for countries by name",
       "github": "https://github.com/faithandjs/rest-countries-api",
       "live": "https://fe-rest-countries-api.netlify.app/",
       "target": "_blank"
@@ -22,7 +24,8 @@
       "id": 3,
       "name": "rock, paper, scissors ( lizard, spork )",
       "img": [{ "0": "./images/rpsls.jpg" }],
-      "text": "This is adaptation of th Rock, Paper, Scissors game. I created this site with  React and SASS.",
+      "tags": ["SASS", "React JS", "Localstorage"],
+      "text": "This is adaptation of the Rock, Paper, Scissors game. Users can play against the computer by clicking the icons.",
       "github": "https://github.com/faithandjs/rock-paper-scissors",
       "live": "https://rock-paper-scissors-lizard-spock-fe.netlify.app/",
       "target": "_blank"
@@ -34,7 +37,8 @@
         { "0": "./images/interactive-cs.jpg" },
         { "1": "./images/interactive-cs1.jpg" }
       ],
-      "text": "This is an interactive comment section. It is responsive, accessible and makes use of local storage. I created this site with  React and SASS.",
+      "tags": ["SASS", "React JS", "Localstorage"],
+      "text": "This is an interactive comment section. Users can add, edit and delete their comments. They can also upvote or downvote the comments of others. ",
       "github": "https://github.com/faithandjs/interactive-comments-section-",
       "live": "https://frontendmentor-interactive-comments-section.netlify.app/",
       "target": "_blank"
@@ -44,7 +48,8 @@
       "id": 5,
       "name": "ip address tracker",
       "img": [{ "0": "./images/ip-address-tracker.jpg" }],
-      "text": "In this project I worked with an API to get a particular location with IP info. It was created with React and CSS.",
+      "tags": ["CSS", "React JS"],
+      "text": "This is an address tracker.  Users can get the data of a region by inputing the IP address of that location.",
       "github": "https://github.com/faithandjs/ip-address-tracker",
       "live": "https://onosedeba.netlify.app/",
       "target": "_self"
@@ -53,6 +58,7 @@
       "id": 6,
       "name": "My portfolio",
       "img": [{ "0": "./images/portfolio.jpg" }],
+      "tags": ["SASS", "React JS", "JSON"],
       "text": "This is my portfolio that I designed, you are already previewing the live site😊 It was created with React, SASS and I created JSON file for this project.",
       "github": "https://github.com/faithandjs/my-portfolio",
       "live": "https://faithh.netlify.app/",

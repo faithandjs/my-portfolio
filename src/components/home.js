@@ -52,20 +52,20 @@ export const Home = () => {
                   </li>
                   <li>
                     <span className="header">Libraries/Tools:</span>
-                    <span> Next Js, React, Bootstrap, Git/Github.</span>
+                    <span> Gatsby Js, Next Js, React, Bootstrap, Git/Github.</span>
                   </li>
                   <li>
                     <span className="header">Concepts:</span>
-                    <span> GraphQL, Redux, RESTful APIs.</span>
+                    <span> GraphQL, Redux, RESTful APIs, Context API.</span>
                   </li>
                 </ul>
               </div>
-              <div className="non-tech">
+              {/* <div className="non-tech">
                 <div className="head">Non-technical skills</div>
                 <ul>
                   <li className="item">video editing.</li>
                 </ul>
-              </div>
+              </div> */}
             </div>{" "}
             <br />
           </div>
